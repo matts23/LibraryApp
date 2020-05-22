@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+html{
+    margin:0;
+    padding:0;
+    height: 100%;
+    background-color: rgb(61, 72, 89);
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;  
+}
+
+h4 h5{
+    font-family: 'Open Sans', sans-serif;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+header{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+#card-delete{
+    font-family: 'Open Sans', sans-serif;
+}
+
+#submit-book{
+    font-family: 'Open Sans', sans-serif;
+}
+
+#library-container{
+    font-family: 'Roboto', sans-serif;
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+form {
+    font-family: 'Roboto', sans-serif;
+    display:grid;
+    grid-template-columns: auto;
+    background-color: burlywood;
+    padding:1rem;
+    border-radius: 10px;
+}
+
+#form-container{
+    max-width: 250px;
+    text-align: center;
+    justify-self: center;
+}
+
+#card-delete{
+    background-color: transparent;
+    border-radius:5px;
+    border: 2px solid red;
+}
+
+#submit-book{
+    border-radius: 5px;
+    background-color: rgb(39, 207, 207);
+    border: 2px solid white;
+    color:white;
+}
+
+#submit-book:hover{
+    background-color: teal;
+    border-color: teal;
+    
+    cursor: grab;
+}
+
+#card-delete:hover{
+    background-color: red;
+    color:white;
+    cursor: grab;
+}
+
+.card{
+    display:block;
+    background-color: aquamarine;
+    height:200px;
+    width: 200px;
+    margin-top: 1rem;
+    text-align: center;
+    border-radius: 10px;
+}
