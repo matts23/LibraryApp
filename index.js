@@ -8,11 +8,13 @@ const submitBook = document.querySelector('#submit-book');
 const libraryContainer = document.querySelector('#library-container');
 
 
-function Book(title, author, pages, read){
+class Book {
+    constructor(title, author, pages, read){
     this.title = title;
     this.author = author;
     this.pages = pages;
     this.read = read;
+    }
 }
 
 function addBookToLibrary(title, author, pages, read){
@@ -28,8 +30,6 @@ submitBook.addEventListener('click', ()=>{
 });
 
 function renderLibrary(library){
-
-    //clear rendered cards before rendering
 
     let first = libraryContainer.firstElementChild; 
         while (first) { 
